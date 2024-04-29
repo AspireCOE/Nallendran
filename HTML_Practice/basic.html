@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en"><!--lang attribute inside the <html> tag, to declare the language of the Web page."en"characters define the language of the HTML page as english-->
+    <head>
+        <title>HTML COURSE</title>
+    </head>
+    <body>
+        <h1>heading 1 is the larger size</h1>  <!--heading has h1 to h6-->
+        <h6>it is the smallest size heading</h6><!--size reduces from h1 to h6-->
+
+        block level elements:p and div,both are similar<br>
+        they start on a new line and take up the full width available and comes with line breaks before and after<br>
+
+        inline elements does not start on a new line only takes up as much width as necessary<br>
+        <span>hello world</span>
+        <!--inside paragraph contents will not break the line,so we have to break for our conviniances-->
+        <!--paragraph tag has a default size,font and line spacing-->
+        <p><b>This text is bold.</b></p><!--b tag bold the text-->
+
+        <p><i>This text is italic.</i></p><!--i tag is for italic the text-->
+
+        <p><small>This is some smaller text.</small></p>
+
+        <p>Do not forget to buy <mark>milk</mark> today.</p><!--The HTML <mark> element defines text that should be marked or highlighted-->
+         
+        <p>My favorite color is <del>blue</del> red.</p><!--Browsers will usually strike a line through deleted text-->
+
+        <p>My favorite color is <ins>red</ins>.</p><!--ins tag underline the text red-->
+
+        <p>This is <sub>subscripted</sub> text.</p>
+        <!--The HTML <sub> element defines subscript text. Subscript text appears half a character below the normal line, and 
+        is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O -->
+
+        <p>This is <sup>superscripted</sup> text.</p>
+        <!--The HTML <sup> element defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. 
+        Superscript text can be used for footnotes, like WWW[1] -->
+
+        <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+        <!--Browsers usually insert quotation marks around the q element-->
+
+        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+        <!--when we move cursor over the text who it will show thw abbrevation-->
+
+        <address>
+            Written by John Doe.<br> 
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+        </address>
+        <!--The text in the <address> element usually renders in italic, 
+        and browsers will always add a line break before and after the <address> element-->
+
+        <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p> 
+        <!--The text in the <cite> element usually renders in italic--> 
+
+        <bdo dir="rtl">This text will be written from right to left</bdo>
+        <!--If your browser supports bi-directional override (bdo), the next line will be written from right to left (rtl)-->
+
+        <p>
+
+            strong tag bold the text<br><br>
+            Lorem ipsum dolor sit<strong> strong tag</strong> amet consectetur adipisicing elit. Sequi voluptatum accusantium saepe animi id impedit. Necessitatibus ratione ab, enim nesciunt reiciendis fugit ut odio hic natus delectus neque accusamus ea!<br>
+            <br>
+
+            em tag is for italic the tex<br><br>
+            Lorem, ipsum dolor sit <em> It will italic the text</em>amet consectetur adipisicing elit. Perspiciatis, facere nostrum. Culpa enim quia voluptatibus. Qui inventore, quas eaque voluptate distinctio iusto, placeat a quidem tempore adipisci aliquid animi. Quia.<br>
+            <br>
+
+            absolute URL (a full web address) in the href attribute<br>
+            <a href="https://www.google.com/">Google</a><br>
+            <!--this tag create a hyperlink we have to paste the link and the text typed will apper as a hyperlink-->
+            
+
+            relative url<br>
+            <a href="html_images.asp">HTML Images</a>
+            <!--A local link (a link to a page within the same website) is specified with a relative URL
+             (without the "https://www" part)--><br>
+
+            link to an email<br>
+             <a href="mailto:someone@example.com">Send email</a>
+             <!--Use mailto: inside the href attribute to create a link that opens the user's email program--><br>
+
+            <!--image-->  <!--self closing tag so no need of close tag-->
+            <img src="f1.jpg" alt="flower image"><!--if image not displayed then alt message will display--><br>
+
+            image as a link <br>
+            <a href="default.asp"><img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+            <!--The image below is a link. Try to click on it--><br>
+
+            Image Floating<br>
+            <p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+                The image will float to the right of the text.</p>
+            
+
+            Button as a Link<br>
+            <button onclick="document.location='default.asp'">HTML Tutorial</button><br>
+            
+
+            link title<br>
+            <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a><br>
+            <!--The title attribute specifies extra information about an element. 
+                The information is most often shown as a tooltip text when the mouse moves over the element-->
+            
+            <a href="#C4">Jump to Chapter 4</a><!--add a link to the bookmark ("Jump to Chapter 4"), from within the same page-->
+            <br>------------------------------------------------------------------------------------1
+
+            <a href="www.google.com" target="_blank">search2</a><br>
+            <!--it is same as seen above but after clicking link it will open on a new tab-->
+            <!--_self - Default. Opens the document in the same window/tab as it was clicked
+                _blank - Opens the document in a new window or tab
+                _parent - Opens the document in the parent frame
+                _top - Opens the document in the full body of the window-->
+            
+            <p style="color:red;">This is a red paragraph.</p><br>
+            <!--The style attribute is used to add styles to an element, such as color-->
+
+            <h1 style="border: 2px solid Tomato;">Hello World</h1>
+            <!--You can set the color of borders-->
+
+            <h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
+            <h1 style="background-color:#ff6347;">#ff6347</h1>
+            <h1 style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1>
+            <!--elements have their background color set with RGB, HEX, and HSL values-->
+
+            <p>Same as color name "Tomato", but 50% transparent:</p>
+            <h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+            <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+            <!--elements have their background color set with RGBA and HSLA values-->
+
+            <h2 id="C4">Chapter 3</h2><!--use the id attribute to create a bookmark-->---------------------2
+
+
+            image maps<br><!--you can create clickable areas on an image-->
+                <!--image is inserted using the <img> tag
+                the difference from other images is that you must add a usemap attribute-->
+            <img src="workplace.jpg" alt="workplace" usemap="#workplace">
+                <!--the html <map> tag defines an image map and is linked to the image by using the required name attribute
+                areas are defined with one or maor <area> tags
+                rect,circle,poly,default====clicklable areas-->
+            <map name="workmap">
+                <area shape="circle" coords="337,300,44" alt="coffee" href="coffee.htm">
+            </map>
+
+
+            Background image<br>
+            <p style="background-image: url(f1.jpg);">backgroung image applied to paragraph.you can type style in head tag also</p>
+            <!--not only for paragraph if you want you can set background img to heading and for whole body
+                if img is less it will repeat-->
+            <style>
+                body{
+                    background-image: url('f1.jpg');
+                    background-repeat: no-repeat;
+                }
+            </style>
+
+            <picture>
+                <source srcset="f6.jpg">
+                <img src="f1.jpg " alt="flower" style="width:auto;"><!--if we resize the page it show another image-->
+            </picture><br>
+
+            html favicon<br>
+            <head>
+                <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+            </head><br>
+            <!--front of title given img will display-->
+
+
+            id attribute<br>
+            <!--it specifies a unique id for an html element
+                the syntax for id is # followed by id name-->
+            <style>
+                #head{
+                    background-color: aquamarine;
+                }
+            </style>
+            <h1 id="head">id attribute</h1>
+            <!--d/b class and id is class can be used by multiple html elements while id must be used by one html element within the page-->
+
+        </p>
+
+
+        <!--lists-->
+        <ul> <!--ul=unordered list-->
+            <li>list1</li>
+            <ul style="list-style-type: square;">  <!--we can give any style,default style is disc-->
+                <li>nested unordered list</li>
+            </ul>
+            <li>list2</li>
+            <li>list3</li>
+        </ul>
+        <ol start="25"> <!--ol=ordered list-->       <!--we can also start styles in between using start -->
+            <li>list1</li>
+            <ol type="A">                           <!--we can give style by using type,default style is numbers-->
+                <li>nested ordered list</li>      
+            </ol>
+            <li>list2</li>
+            <li>list3</li>
+        </ol>
+        <dl><!--description list-->
+            <dt>introduction</dt>        <!--defines the term-->
+            <dd>html basics</dd>         <!--describe each term-->
+            <dd>html basics with css</dd>
+        </dl>
+
+
+        <!--table-->
+        <table style="width:100%">
+            <caption>students list</caption>  <!--caption is a table name-->
+            <thead>
+                <tr style="width: 70%;">                    <!--tr table row-->
+                    <th>s.no</th>       <!--th table head,displayed in bold-->
+                    <th>name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 20%;">
+                    <td>1</td>          <!--table data-->
+                    <td>rajesh</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>ramesh</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <!--to add a border to the table use css border property-->
+        table,th,td{
+            border: 1px solid black;  <!--it will create double layer border,to avoid that use collapse border-->
+            border-collapse:collapse;
+        }
+
+        <!--by default table headers are bold and centered-->
+        th{
+            text-align:left;
+        }
+
+        <!--to spans(merge) two or more columns use "colspan"-->
+        <!--<th colspan="5">subjects</th>-->
+
+        <!--to spans(merge) two or more rows use "rowspan"-->
+        <!--<th rowspan="2">subjects</th>-->
+
+        <!--table styling-->
+        <!--to add style to row tr:nth-child(even)
+                            col td:nth-child(even),th:nth-child(even)-->
+        
+
+
+        <!--form-->
+        <form>
+            <div>
+                <label>First name</label>
+                <input type="text" name="first-name" placeholder="enter first name"><!--place holder display typed text in background -->
+            </div>
+            <div>
+                <label>Last name</label>
+                <input type="text" name="first-name">
+            </div>
+            <div>
+                <label>Age</label>
+                <input type="number" name="age" value="0">
+            </div>
+            <div>
+                <label>Birthday</label>
+                <input type="date" name="brithday">
+            </div>
+            <div>
+                <label>Message</label>      
+                 <textarea name="message"></textarea>  <!--it will create a text box for writing long para-->
+            </div>
+            <div>
+                <label>Gender</label>
+                <select name="gender">
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                </select>
+            </div>
+            <input type="submit" name="submit" value="submit"><!--submit will save the data and moves into next page-->
+        </form>
+        <!--Button-->
+            <button>click</button><br>
+        
+
+        <!--Quotations-->
+        <blockquote cite="http://www.google.com">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi facilis ullam quae labore placeat quod dolores! Dolorum facere recusandae excepturi error similique voluptates dolor ipsam blanditiis quibusdam. Perferendis, velit assumenda!
+        </blockquote>
+
+
+        <!--Cascading Style Sheets (CSS) is used to format the layout of a webpage
+        The word cascading means that a style applied to a parent element will also apply to all children elements within the parent. So, if you set the color of the body text to "blue", all headings, paragraphs,
+        and other text elements within the body will also get the same color-->
+
+        <!--SS can be added to HTML documents in 3 ways:
+
+        Inline - by using the style attribute inside HTML elements
+        Internal - by using a <style> element in the <head> section
+        External - by using a <link> element to link to an external CSS file-->
+
+        <h1>Inline CSS</h1>
+        <!--An inline CSS is used to apply a unique style to a single HTML element.
+        An inline CSS uses the style attribute of an HTML element-->
+        <h1 style="color:blue;">A Blue Heading</h1>
+        <p style="color:red;">A red paragraph.</p>
+
+        <h1>Internal CSS</h1>
+        <!--An internal CSS is used to define a style for a single HTML page.
+        An internal CSS is defined in the <head> section of an HTML page, within a <style> element-->
+        <head>
+            <style>
+            body {background-color: rgb(176, 230, 192);}
+            h1   {color: blue;}
+            p    {color: red;}
+            </style>
+        </head>
+
+        <h1>External CSS</h1>
+        <!--An external style sheet is used to define the style for many HTML pages.
+        To use an external style sheet, add a link to it in the <head> section of each HTML page-->
+        <head>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <!--The external style sheet can be written in any text editor.
+         The file must not contain any HTML code, and must be saved with a .css extension.-->
+         body {
+            background-color: powderblue;
+          }
+          h1 {
+            color: blue;
+          }
+          p {
+            color: red;
+          }
+
+
+
+        <!--Use of CSS color, font-family and font-size properties-->
+        <head>
+            <style>
+            h1 {
+              color: blue;
+              font-family: verdana;
+              font-size: 300%;
+            }
+            p {
+              color: red;
+              font-family: courier;
+              font-size: 160%;
+            }
+            </style>
+        </head>
+
+
+        <!--CSS Border-->
+        p {
+            border: 2px solid powderblue;
+        }
+
+
+        <!--CSS Padding-->
+        p {
+            border: 2px solid powderblue;
+            padding: 30px;
+          }
+
+
+        <!--CSS Margin-->
+        p {
+            border: 2px solid powderblue;
+            margin: 50px;
+          }
+
+
+        <!--Link to External CSS-->
+        <!--This example uses a full URL to link to a style sheet-->
+        <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+        <!--This example links to a style sheet located in the html folder on the current web site-->
+        <link rel="stylesheet" href="/html/styles.css">
+        <!--This example links to a style sheet located in the same folder as the current page-->
+        <link rel="stylesheet" href="styles.css">
+
+        <!--semantic tags-->
+        <!--header
+        footer
+        aside
+        main
+        article
+        nav
+        section
+        details-->
+        <header>
+            <h1>header</h1>
+        </header>
+        <small>small tag </small><!--small tag gives very small text-->
+        <section>
+            <article class="post"><!--if more than one article then use class-->
+                <h2>article inside section</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis beatae eos odio. Tempore aut laboriosam incidunt architecto! Debitis, amet! Enim dignissimos ex pariatur incidunt magni alias quo, sed consequuntur minima.</p>
+            </article>
+            <article class="post">
+                <h2>article inside section</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis beatae eos odio. Tempore aut laboriosam incidunt architecto! Debitis, amet! Enim dignissimos ex pariatur incidunt magni alias quo, sed consequuntur minima.</p>
+            </article>
+        </section>
+
+        <aside>
+            <h3>category</h3>
+            <nav>
+                <ul>
+                    <li><a href="#">category 1</a></li>
+                    <li><a href="#">category 2</a></li>
+                    <li><a href="#">category 3</a></li>
+                </ul>
+        </nav>
+        </aside>
+        <footer>
+            <p>&copy;2024</p>
+        </footer>
+    </body>
+</html>
